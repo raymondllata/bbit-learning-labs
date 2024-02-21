@@ -1,7 +1,7 @@
 import pika
 import os
 
-class mqConsumerInterface:
+class mqConsumer:
     def __init__(self, binding_key: str, exchange_name: str, queue_name: str) -> None:
         # Save parameters to class variables
         self.binding_key = binding_key
